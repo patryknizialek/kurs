@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <style>
+      [class*="foo"] {
+        background: silver;
+      }
+      [class~="foo"] {
+        font-weight: bold;
+      }
+    </style>
+
+    <div class="_F0o">Lorem ipsum dolor sit amet.</div>
+    <p class="test foo test2">Lorem ipsum dolor sit.</p>
+    <p class="_foooo test - 345">Lorem ipsum dolor sit.</p>
+    <p class="test-fo0">Lorem ipsum dolor sit.</p>
+  </body>
+</html>
